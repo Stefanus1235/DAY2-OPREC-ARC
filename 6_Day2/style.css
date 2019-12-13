@@ -1,0 +1,39 @@
+body
+{
+    background-image: url("metalbackground.jpg");
+    background-attachment: fixed; 
+}
+
+.KalkulatorClass {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(6, 80px);
+}
+
+.KalkulatorClass > button {
+    font-size: 2rem;
+}
+
+.output {
+    background-color: darkslategrey;
+    color: snow;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-right: 1rem;
+    
+}
+
+.preoperand {
+    font-size: 1.3rem;
+}
+
+.currentoperand {
+    font-size: 1.7rem;
+}
+    
